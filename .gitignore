@@ -1,0 +1,46 @@
+# Terraform working directory
+.terraform/
+.terraform.tfstate.lock.info
+
+# Terraform CLI configuration can contain registry credentials
+.terraformrc
+terraform.rc
+
+# State files
+*.tfstate
+*.tfstate.*
+
+# Variable values
+*.tfvars
+*.tfvars.json
+
+# Allow sanitized examples
+!*.tfvars.example
+!*.tfvars.json.example
+
+# Local backend configuration
+backend.local.hcl
+
+# Saved plans
+*.tfplan
+*.plan
+tfplan
+plan.out
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Credentials, private keys, and certificate bundles
+credentials
+credentials.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.kdbx
+
+# Crash logs
+crash.log
+crash.*.log
