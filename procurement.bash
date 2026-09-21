@@ -87,6 +87,7 @@ printf '[1/4] Initializing Terraform...\n'
 terraform -chdir="$terraform_directory" init \
   -input=false \
   -reconfigure \
+  -lockfile=readonly \
   -backend-config="$BACKEND_CONFIG" \
   -backend-config="key=$state_key"
 
